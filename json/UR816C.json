@@ -511,6 +511,7 @@
                 "protocol": "DC",
                 "channels": 0,
                 "attributes": {
+                    "voltage": "16V",
                     "outer_diameter_mm": 5.5,
                     "inner_diameter_mm": 2.5,
                     "length_mm": 10,

@@ -1,0 +1,200 @@
+{
+    "id": "128bit unique id",
+    "name": "D302J+",
+    "vendor": "FX-AUDIO",
+    "serial_id": "",
+    "type": "Digital Amp",
+    "ports": [
+        {
+            "id": "1",
+            "name": "USB Input",
+            "shape": "USB_B",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Data",
+                "protocol": "USB_Audio",
+                "channels": 2,
+                "attributes": {
+                }
+            }
+        },
+        {
+            "id": "2",
+            "name": "Optical Input",
+            "shape": "TOS-Link",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "S/PDIF",
+                "channels": 2,
+                "attributes": {
+                    "stereo_config": "L+R",
+                    "format": "PCM"
+                }
+            }
+        },
+        {
+            "id": "3",
+            "name": "Coaxial Input",
+            "shape": "RCA",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "S/PDIF",
+                "channels": 2,
+                "attributes": {
+                    "stereo_config": "L+R",
+                    "format": "PCM"
+                }
+            }
+        },
+        {
+            "id": "4",
+            "name": "Analog Input 1",
+            "shape": "RCA",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "L"
+                }
+            }
+        },
+        {
+            "id": "5",
+            "name": "Analog Input 2",
+            "shape": "RCA",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "R"
+                }
+            }
+        },
+        {
+            "id": "6A",
+            "name": "Speaker Out L Positive",
+            "shape": "BananaJack",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "L",
+                    "polarity": "Positive"
+                }
+            }
+        },
+        {
+            "id": "6B",
+            "name": "Speaker Out L Negative",
+            "shape": "BananaJack",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "L",
+                    "polarity": "Negative"
+                }
+            }
+        },
+        {
+            "id": "7A",
+            "name": "Speaker Out R Positive",
+            "shape": "BananaJack",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "R",
+                    "polarity": "Positive"
+                }
+            }
+        },
+        {
+            "id": "7B",
+            "name": "Speaker Out R Negative",
+            "shape": "BananaJack",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "R",
+                    "polarity": "Negative"
+                }
+            }
+        },
+        {
+            "id": "8",
+            "name": "Headphone",
+            "shape": "Phone_3.5mm",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 2,
+                "attributes": {
+                    "stereo_config": "L+R"
+                }
+            }
+        },
+        {
+            "id": "9",
+            "name": "External Power",
+            "shape": "DC_Barrel",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Power",
+                "protocol": "DC",
+                "channels": 0,
+                "attributes": {
+                    "voltage": "12V",
+                    "outer_diameter_mm": 5.5,
+                    "inner_diameter_mm": 2.1,
+                    "polarity": "center_positive"
+                }
+            }
+        }
+    ],
+    "ad_da": ["24bit"],
+    "dimensions": {
+        "weight": "410g",
+        "width": "133mm",
+        "height": "33mm",
+        "depth": "108mm"
+    }
+}
