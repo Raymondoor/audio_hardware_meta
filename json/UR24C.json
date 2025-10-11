@@ -1,0 +1,246 @@
+{
+    "id": "128bit unique id",
+    "name": "UR24C",
+    "vendor": "Steinberg",
+    "serial_id": "steinberg's id for ur24c",
+    "type": "Audio Interface",
+    "ports": [
+        {
+            "id": "1",
+            "name": "Input 1",
+            "shape": "Combo",
+            "direction": "Input",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "dynamic_range_input_db": 102,
+                    "phantom_power": {
+                        "supported": true,
+                        "voltage": 48,
+                        "switchable": true
+                    },
+                    "hi-z": {
+                        "supported": true,
+                        "switchable": true
+                    }
+                }
+            }
+        },
+        {
+            "id": "2",
+            "name": "Input 2",
+            "shape": "Combo",
+            "direction": "Input",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "dynamic_range_input_db": 102,
+                    "phantom_power": {
+                        "supported": true,
+                        "voltage": 48,
+                        "switchable": true
+                    }
+                }
+            }
+        },
+        {
+            "id": "3",
+            "name": "MIDI Input",
+            "shape": "5pin_din",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Data",
+                "protocol": "MIDI",
+                "channels": 16,
+                "attributes": {
+                }
+            }
+        },
+        {
+            "id": "4",
+            "name": "Main Out L",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "L"
+                }
+            }
+        },
+        {
+            "id": "5",
+            "name": "Main Out R",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "R"
+                }
+            }
+        },
+        {
+            "id": "6",
+            "name": "Line Out 1L",
+            "shape": "RCA",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "L"
+                }
+            }
+        },
+        {
+            "id": "7",
+            "name": "Line Out 1R",
+            "shape": "RCA",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "R"
+                }
+            }
+        },
+        {
+            "id": "8",
+            "name": "Line Out 2L",
+            "shape": "RCA",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "L"
+                }
+            }
+        },
+        {
+            "id": "9",
+            "name": "Line Out 2R",
+            "shape": "RCA",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "R"
+                }
+            }
+        },
+        {
+            "id": "10",
+            "name": "MIDI Output",
+            "shape": "5pin_din",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Data",
+                "protocol": "MIDI",
+                "channels": 16,
+                "attributes": {
+                }
+            }
+        },
+        {
+            "id": "11",
+            "name": "Headphone",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 2,
+                "attributes": {
+                    "stereo_config": "L+R"
+                }
+            }
+        },
+        {
+            "id": "12",
+            "name": "Interface",
+            "shape": "USB_C",
+            "direction": "Bidirectional",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": ["Data", "Power"],
+                "protocol": ["USB_Audio", "DC"],
+                "channels": [
+                    {"name": "Input 1", "direction": "input"},
+                    {"name": "Input 2", "direction": "input"},
+                    {"name": "Main Out", "direction": "output", "stereo": true},
+                    {"name": "Output 1/2", "direction": "output", "stereo": true},
+                    {"name": "Output 3/4", "direction": "output", "stereo": true},
+                    {"name": "MIDI In", "protocol": "MIDI", "channels": 16, "direction": "input"},
+                    {"name": "MIDI Out", "protocol": "MIDI", "channels": 16, "direction": "output"},
+                    {"name": "Power", "protocol": "DC", "channels": 0, "direction": "input"}
+                ],
+                "attributes": {
+                    "sample_rate": ["44.1kHz", "48kHz", "88.2kHz", "96kHz", "176.4kHz", "192kHz"],
+                    "ad_da": ["32bit"]
+                }
+            }
+        },
+        {
+            "id": "13",
+            "name": "External Power",
+            "shape": "Micro_USB_B",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Power",
+                "protocol": "DC",
+                "channels": 0,
+                "attributes": {
+                    "description": "Not required if USB_C supplies power as well."
+                }
+            }
+        }
+    ],
+    "ad_da": ["32bit"],
+    "dimensions": {
+        "weight": "1100g",
+        "width": "198mm",
+        "height": "47mm",
+        "depth": "159mm"
+    }
+}

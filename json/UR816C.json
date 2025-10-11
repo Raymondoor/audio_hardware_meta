@@ -1,0 +1,529 @@
+{
+    "id": "128bit unique id",
+    "name": "UR816C",
+    "vendor": "Steinberg",
+    "serial_id": "steinberg's id for UR816C",
+    "type": "Audio Interface",
+    "ports": [
+        {
+            "id": "1",
+            "name": "Input 1",
+            "shape": "Combo",
+            "direction": "Input",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "dynamic_range_input_db": 106,
+                    "phantom_power": {
+                        "supported": true,
+                        "voltage": 48,
+                        "switchable": true
+                    },
+                    "hi-z": {
+                        "supported": true,
+                        "db": 16,
+                        "switchable": true
+                    }
+                }
+            }
+        },
+        {
+            "id": "2",
+            "name": "Input 2",
+            "shape": "Combo",
+            "direction": "Input",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "dynamic_range_input_db": 106,
+                    "phantom_power": {
+                        "supported": true,
+                        "voltage": 48,
+                        "switchable": true
+                    },
+                    "hi-z": {
+                        "supported": true,
+                        "db": 16,
+                        "switchable": true
+                    }
+                }
+            }
+        },
+        {
+            "id": "3",
+            "name": "Input 3",
+            "shape": "Combo",
+            "direction": "Input",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "dynamic_range_input_db": 106,
+                    "phantom_power": {
+                        "supported": true,
+                        "voltage": 48,
+                        "switchable": true
+                    }
+                }
+            }
+        },
+        {
+            "id": "4",
+            "name": "Input 4",
+            "shape": "Combo",
+            "direction": "Input",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "dynamic_range_input_db": 106,
+                    "phantom_power": {
+                        "supported": true,
+                        "voltage": 48,
+                        "switchable": true
+                    }
+                }
+            }
+        },
+        {
+            "id": "5",
+            "name": "Input 5",
+            "shape": "Combo",
+            "direction": "Input",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "dynamic_range_input_db": 106,
+                    "phantom_power": {
+                        "supported": true,
+                        "voltage": 48,
+                        "switchable": true
+                    }
+                }
+            }
+        },
+        {
+            "id": "6",
+            "name": "Input 6",
+            "shape": "Combo",
+            "direction": "Input",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "dynamic_range_input_db": 106,
+                    "phantom_power": {
+                        "supported": true,
+                        "voltage": 48,
+                        "switchable": true
+                    }
+                }
+            }
+        },
+        {
+            "id": "7",
+            "name": "Input 7",
+            "shape": "Combo",
+            "direction": "Input",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "dynamic_range_input_db": 106,
+                    "phantom_power": {
+                        "supported": true,
+                        "voltage": 48,
+                        "switchable": true
+                    }
+                }
+            }
+        },
+        {
+            "id": "8",
+            "name": "Input 8",
+            "shape": "Combo",
+            "direction": "Input",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "dynamic_range_input_db": 106,
+                    "phantom_power": {
+                        "supported": true,
+                        "voltage": 48,
+                        "switchable": true
+                    }
+                }
+            }
+        },
+        {
+            "id": "9",
+            "name": "MIDI Input",
+            "shape": "5pin_din",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Data",
+                "protocol": "MIDI",
+                "channels": 16,
+                "attributes": {
+                }
+            }
+        },
+        {
+            "id": "10",
+            "name": "Main Out L",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "L"
+                }
+            }
+        },
+        {
+            "id": "11",
+            "name": "Main Out R",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "R"
+                }
+            }
+        },
+        {
+            "id": "12",
+            "name": "Line Out 1L",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "L"
+                }
+            }
+        },
+        {
+            "id": "13",
+            "name": "Line Out 1R",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "R"
+                }
+            }
+        },
+        {
+            "id": "14",
+            "name": "Line Out 2L",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "L"
+                }
+            }
+        },
+        {
+            "id": "15",
+            "name": "Line Out 2R",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "R"
+                }
+            }
+        },
+        {
+            "id": "16",
+            "name": "Line Out 3L",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "L"
+                }
+            }
+        },
+        {
+            "id": "17",
+            "name": "Line Out 3R",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "R"
+                }
+            }
+        },
+        {
+            "id": "18",
+            "name": "Line Out 4L",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "L"
+                }
+            }
+        },
+        {
+            "id": "19",
+            "name": "Line Out 4R",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "Both",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "stereo_config": "R"
+                }
+            }
+        },
+        {
+            "id": "20",
+            "name": "MIDI Output",
+            "shape": "5pin_din",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Data",
+                "protocol": "MIDI",
+                "channels": 16,
+                "attributes": {
+                }
+            }
+        },
+        {
+            "id": "21",
+            "name": "Optical In",
+            "shape": "TOS-Link",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": ["ADAT", "S/PDF"],
+                "channels": 8,
+                "attributes": {
+                }
+            }
+        },
+        {
+            "id": "22",
+            "name": "Optical Out",
+            "shape": "TOS-Link",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": ["ADAT", "S/PDF"],
+                "channels": 8,
+                "attributes": {
+                }
+            }
+        },
+        {
+            "id": "23",
+            "name": "Clock In",
+            "shape": "BNC",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Data",
+                "protocol": "SSPLL",
+                "channels": 1,
+                "attributes": {
+                }
+            }
+        },
+        {
+            "id": "24",
+            "name": "Clock Out",
+            "shape": "BNC",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Data",
+                "protocol": "SSPLL",
+                "channels": 1,
+                "attributes": {
+                }
+            }
+        },
+        {
+            "id": "25",
+            "name": "Headphone 1",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 2,
+                "attributes": {
+                    "stereo_config": "L+R"
+                }
+            }
+        },
+        {
+            "id": "26",
+            "name": "Headphone 2",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 2,
+                "attributes": {
+                    "stereo_config": "L+R"
+                }
+            }
+        },
+        {
+            "id": "27",
+            "name": "Interface",
+            "shape": "USB_C",
+            "direction": "Bidirectional",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Data",
+                "protocol": "USB_Audio",
+                "channels": [
+                    {"name": "Input 1", "direction": "input"},
+                    {"name": "Input 2", "direction": "input"},
+                    {"name": "Input 3", "direction": "input"},
+                    {"name": "Input 4", "direction": "input"},
+                    {"name": "Input 5", "direction": "input"},
+                    {"name": "Input 6", "direction": "input"},
+                    {"name": "Input 7", "direction": "input"},
+                    {"name": "Input 8", "direction": "input"},
+                    {"name": "Main Out", "direction": "output", "stereo": true},
+                    {"name": "Output 1/2", "direction": "output", "stereo": true},
+                    {"name": "Output 3/4", "direction": "output", "stereo": true},
+                    {"name": "Output 5/6", "direction": "output", "stereo": true},
+                    {"name": "Output 7/8", "direction": "output", "stereo": true},
+                    {"name": "MIDI In", "protocol": "MIDI", "channels": 16, "direction": "input"},
+                    {"name": "MIDI Out", "protocol": "MIDI", "channels": 16, "direction": "output"},
+                    {"name": "Optical In", "protocol": "ADAT/SPDIF", "channels": 8, "direction": "input"}
+                ],
+                "attributes": {
+                    "sample_rate": ["44.1kHz", "48kHz", "88.2kHz", "96kHz", "176.4kHz", "192kHz"],
+                    "ad_da": ["32bit"]
+                }
+            }
+        },
+        {
+            "id": "28",
+            "name": "External Power",
+            "shape": "DC_Barrel",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Power",
+                "protocol": "DC",
+                "channels": 0,
+                "attributes": {
+                    "outer_diameter_mm": 5.5,
+                    "inner_diameter_mm": 2.5,
+                    "length_mm": 10,
+                    "polarity": "center_positive"
+                }
+            }
+        }
+    ],
+    "ad_da": ["32bit"],
+    "dimensions": {
+        "weight": "2700g",
+        "width": "446.3mm",
+        "height": "45.6mm",
+        "depth": "225.8mm"
+    }
+}
