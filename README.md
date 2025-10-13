@@ -16,3 +16,5 @@ I wanted to create an easy way to organize audio equipment, such as Audio interf
 This project is useful by itself, but is intended for another of my personal's, I wanted to make a tool for creating diagrams for my audio hardware setup.
 
 The goal of this repo is to make a good enough data schema for the devices, and to actually populate the data somewhere, in a database. So help me if you want to :)
+
+This is not a complete project, an unstable commit may be pushed.

@@ -214,6 +214,7 @@
                     {"name": "Power", "protocol": "DC", "channels": 0, "direction": "input"}
                 ],
                 "attributes": {
+                    "": "USB 3.0",
                     "sample_rate": ["44.1kHz", "48kHz", "88.2kHz", "96kHz", "176.4kHz", "192kHz"],
                     "ad_da": ["32bit"]
                 }
@@ -234,6 +235,57 @@
                     "description": "Not required if USB_C supplies power as well."
                 }
             }
+        }
+    ],
+    "process": [
+        {
+            "id": "1",
+            "name": "Gain 1",
+            "type": "Preamp",
+            "attributes": {
+                "min": "0db",
+                "max": "",
+                "name": "D-PRE"
+            }
+        },
+        {
+            "id": "2",
+            "name": "Hi-Z",
+            "type": "impedance",
+            "attributes": {
+                "min": "6k Ohm",
+                "max": "1M Ohm"
+            }
+        },
+        {
+            "id": "3",
+            "name": "Headphone signal",
+            "type": "Merge",
+            "attributes": {
+            }
+        },
+        {
+            "id": "4",
+            "name": "Headphone Amp",
+            "type": "Headphone_Amp",
+            "attributes": {
+                "min": "0",
+                "max": "100mW+100mW",
+                "impedance" : "40 Ohm",
+                "name": "D-PRE"
+            }
+        }
+    ],
+    "controlls": [
+        {
+            "id": "1",
+            "name": "Gain 1",
+            "type": "Continuous"
+        },
+        {
+            "id": "2",
+            "name": "Hi-Z",
+            "type": "Boolean"
         }
     ],
     "ad_da": ["32bit"],
