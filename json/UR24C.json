@@ -240,39 +240,117 @@
     "process": [
         {
             "id": "1",
-            "name": "Gain 1",
+            "name": "Preamp CH1",
             "type": "Preamp",
             "attributes": {
-                "min": "0db",
-                "max": "",
-                "name": "D-PRE"
+                "model": "D-PRE",
+                "range": "0–60dB"
             }
         },
         {
             "id": "2",
-            "name": "Hi-Z",
-            "type": "impedance",
+            "name": "Preamp CH2",
+            "type": "Preamp",
             "attributes": {
-                "min": "6k Ohm",
-                "max": "1M Ohm"
+                "model": "D-PRE",
+                "range": "0–60dB"
             }
         },
         {
             "id": "3",
-            "name": "Headphone signal",
-            "type": "Merge",
+            "name": "Hi-Z Stage",
+            "type": "Impedance Selector",
             "attributes": {
+                "range": "6kΩ–1MΩ"
             }
         },
         {
             "id": "4",
-            "name": "Headphone Amp",
-            "type": "Headphone_Amp",
+            "name": "High-Pass Filter",
+            "type": "Filter",
             "attributes": {
-                "min": "0",
-                "max": "100mW+100mW",
-                "impedance" : "40 Ohm",
-                "name": "D-PRE"
+                "cutoff": "80Hz"
+            }
+        },
+        {
+            "id": "5",
+            "name": "Insert FX",
+            "type": "DSP",
+            "attributes": {
+                "blocks": [
+                "Channel Strip (Comp/EQ)",
+                "REV-X Reverb",
+                "Guitar Amp Classics"
+                ],
+                "mode": "FX REC ON/OFF"
+            }
+        },
+        {
+            "id": "6",
+            "name": "ADC",
+            "type": "Converter",
+            "attributes": {
+                "bit_depth": "24-bit",
+                "sample_rate": "44.1–192kHz"
+            }
+        },
+        {
+            "id": "7",
+            "name": "USB Send",
+            "type": "Digital Send",
+            "attributes": {
+                "target": "DAW Input 1/2"
+            }
+        },
+        {
+            "id": "8",
+            "name": "DAW Return",
+            "type": "Digital Return",
+            "attributes": {
+                "source": "DAW Output 1/2"
+            }
+        },
+        {
+            "id": "9",
+            "name": "Loopback Mixer",
+            "type": "Routing",
+            "attributes": {
+                "mix": "DAW Return + Input"
+            }
+        },
+        {
+            "id": "10",
+            "name": "Monitor Mixer",
+            "type": "Mixer",
+            "attributes": {
+                "modes": ["DAW", "INPUT"],
+                "inputs": ["Loopback", "DAW Return"]
+            }
+        },
+        {
+            "id": "11",
+            "name": "DAC",
+            "type": "Converter",
+            "attributes": {
+                "bit_depth": "24-bit",
+                "sample_rate": "44.1–192kHz"
+            }
+        },
+        {
+            "id": "12",
+            "name": "Output Matrix",
+            "type": "Router",
+            "attributes": {
+                "targets": ["Main Out", "Line Out 1/2", "Phones"]
+            }
+        },
+        {
+            "id": "13",
+            "name": "Phones Amp",
+            "type": "Headphone Amplifier",
+            "attributes": {
+                "power": "100mW+100mW",
+                "impedance": "40Ω"
             }
         }
     ],
@@ -284,8 +362,86 @@
         },
         {
             "id": "2",
+            "name": "Gain 2",
+            "type": "Continuous"
+        },
+        {
+            "id": "3",
             "name": "Hi-Z",
             "type": "Boolean"
+        },
+        {
+            "id": "4",
+            "name": "Phantom Power",
+            "type": "Boolean"
+        },
+        {
+            "id": "5",
+            "name": "HPF Switch",
+            "type": "Boolean"
+        },
+        {
+            "id": "6",
+            "name": "FX REC",
+            "type": "Boolean"
+        },
+        {
+            "id": "7",
+            "name": "Loopback",
+            "type": "Boolean"
+        },
+        {
+            "id": "8",
+            "name": "Monitor Mode",
+            "type": "Selector"
+        },
+        {
+            "id": "9",
+            "name": "Phones Level",
+            "type": "Continuous"
+        },
+        {
+            "id": "10",
+            "name": "Output Level",
+            "type": "Continuous"
+        }
+    ],
+    "routing": [
+        {
+            "from": "1", "to": "4"
+        },
+        {
+            "from": "2", "to": "3"
+        },
+        {
+            "from": "3", "to": "4"
+        },
+        {
+            "from": "4", "to": "5"
+        },
+        {
+            "from": "5", "to": "6"
+        },
+        {
+            "from": "6", "to": "7"
+        },
+        {
+            "from": "7", "to": "9"
+        },
+        {
+            "from": "8", "to": "10"
+        },
+        {
+            "from": "9", "to": "10"
+        },
+        {
+            "from": "10", "to": "11"
+        },
+        {
+            "from": "11", "to": "12"
+        },
+        {
+            "from": "12", "to": "13"
         }
     ],
     "ad_da": ["32bit"],
