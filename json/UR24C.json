@@ -240,6 +240,22 @@
     "process": [
         {
             "id": "1",
+            "name": "Phantom CH1",
+            "type": "Phantom Power",
+            "attributes": {
+                "range": "0–48V"
+            }
+        },
+        {
+            "id": "2",
+            "name": "Phantom CH2",
+            "type": "Phantom Power",
+            "attributes": {
+                "range": "0–48V"
+            }
+        },
+        {
+            "id": "3",
             "name": "Preamp CH1",
             "type": "Preamp",
             "attributes": {
@@ -248,7 +264,7 @@
             }
         },
         {
-            "id": "2",
+            "id": "4",
             "name": "Preamp CH2",
             "type": "Preamp",
             "attributes": {
@@ -257,7 +273,7 @@
             }
         },
         {
-            "id": "3",
+            "id": "5",
             "name": "Hi-Z Stage",
             "type": "Impedance Selector",
             "attributes": {
@@ -265,15 +281,23 @@
             }
         },
         {
-            "id": "4",
-            "name": "High-Pass Filter",
+            "id": "6",
+            "name": "Phase Inverter",
+            "type": "Phase Inverter",
+            "attributes": {
+                "modes": ["0°", "180°"]
+            }
+        },
+        {
+            "id": "7",
+            "name": "High-Pass Filter CH1",
             "type": "Filter",
             "attributes": {
                 "cutoff": "80Hz"
             }
         },
         {
-            "id": "5",
+            "id": "8",
             "name": "Insert FX",
             "type": "DSP",
             "attributes": {
@@ -286,7 +310,7 @@
             }
         },
         {
-            "id": "6",
+            "id": "9",
             "name": "ADC",
             "type": "Converter",
             "attributes": {
@@ -295,7 +319,7 @@
             }
         },
         {
-            "id": "7",
+            "id": "10",
             "name": "USB Send",
             "type": "Digital Send",
             "attributes": {
@@ -303,7 +327,7 @@
             }
         },
         {
-            "id": "8",
+            "id": "11",
             "name": "DAW Return",
             "type": "Digital Return",
             "attributes": {
@@ -311,7 +335,7 @@
             }
         },
         {
-            "id": "9",
+            "id": "12",
             "name": "Loopback Mixer",
             "type": "Routing",
             "attributes": {
@@ -408,31 +432,31 @@
     ],
     "routing": [
         {
-            "from": "1", "to": "4"
+            "from": "p1", "to": "x1"
         },
         {
-            "from": "2", "to": "3"
+            "from": "x1", "to": "x3"
         },
         {
-            "from": "3", "to": "4"
+            "from": "c1", "to": "x3"
         },
         {
-            "from": "4", "to": "5"
+            "from": "p1", "to": "x5"
         },
         {
-            "from": "5", "to": "6"
+            "from": "x5", "to": "x3"
         },
         {
-            "from": "6", "to": "7"
+            "from": "x3", "to": "x9"
         },
         {
-            "from": "7", "to": "9"
+            "from": "x9", "to": "x6"
         },
         {
-            "from": "8", "to": "10"
+            "from": "x6", "to": "x7"
         },
         {
-            "from": "9", "to": "10"
+            "from": "x7", "to": "x8"
         },
         {
             "from": "10", "to": "11"
