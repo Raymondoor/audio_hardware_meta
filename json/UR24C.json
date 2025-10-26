@@ -8,9 +8,9 @@
         {
             "id": "1",
             "name": "Input 1",
-            "shape": "Combo",
+            "shape": "Phone_6.35mm",
             "direction": "Input",
-            "balanced": "Both",
+            "balanced": "False",
             "gender": "Female",
             "signal": {
                 "type": "Audio",
@@ -248,10 +248,10 @@
         },
         {
             "id": "2",
-            "name": "Phantom CH2",
-            "type": "Phantom Power",
+            "name": "Hi-Z Stage CH1",
+            "type": "Impedance Selector",
             "attributes": {
-                "range": "0–48V"
+                "range": "6kΩ–1MΩ"
             }
         },
         {
@@ -265,31 +265,23 @@
         },
         {
             "id": "4",
-            "name": "Preamp CH2",
-            "type": "Preamp",
+            "name": "ADC CH1",
+            "type": "Converter",
             "attributes": {
-                "model": "D-PRE",
-                "range": "0–60dB"
+                "bit_depth": "32-bit",
+                "sample_rate": "44.1–192kHz"
             }
         },
         {
             "id": "5",
-            "name": "Hi-Z Stage",
-            "type": "Impedance Selector",
-            "attributes": {
-                "range": "6kΩ–1MΩ"
-            }
-        },
-        {
-            "id": "6",
-            "name": "Phase Inverter",
+            "name": "Phase Inverter CH1",
             "type": "Phase Inverter",
             "attributes": {
                 "modes": ["0°", "180°"]
             }
         },
         {
-            "id": "7",
+            "id": "6",
             "name": "High-Pass Filter CH1",
             "type": "Filter",
             "attributes": {
@@ -302,20 +294,17 @@
             "type": "DSP",
             "attributes": {
                 "blocks": [
-                "Channel Strip (Comp/EQ)",
-                "REV-X Reverb",
-                "Guitar Amp Classics"
+                "Channel Strip (Comp/EQ)"
                 ],
                 "mode": "FX REC ON/OFF"
             }
         },
         {
             "id": "9",
-            "name": "ADC",
-            "type": "Converter",
+            "name": "FX REC",
+            "type": "Signal Switch",
             "attributes": {
-                "bit_depth": "24-bit",
-                "sample_rate": "44.1–192kHz"
+                "modes": ["on", "off"]
             }
         },
         {
@@ -376,6 +365,23 @@
                 "power": "100mW+100mW",
                 "impedance": "40Ω"
             }
+        },
+        {
+            "id": "2",
+            "name": "Phantom CH2",
+            "type": "Phantom Power",
+            "attributes": {
+                "range": "0–48V"
+            }
+        },
+        {
+            "id": "5",
+            "name": "Preamp CH2",
+            "type": "Preamp",
+            "attributes": {
+                "model": "D-PRE",
+                "range": "0–60dB"
+            }
         }
     ],
     "controlls": [
@@ -431,42 +437,18 @@
         }
     ],
     "routing": [
-        {
-            "from": "p1", "to": "x1"
-        },
-        {
-            "from": "x1", "to": "x3"
-        },
-        {
-            "from": "c1", "to": "x3"
-        },
-        {
-            "from": "p1", "to": "x5"
-        },
-        {
-            "from": "x5", "to": "x3"
-        },
-        {
-            "from": "x3", "to": "x9"
-        },
-        {
-            "from": "x9", "to": "x6"
-        },
-        {
-            "from": "x6", "to": "x7"
-        },
-        {
-            "from": "x7", "to": "x8"
-        },
-        {
-            "from": "10", "to": "11"
-        },
-        {
-            "from": "11", "to": "12"
-        },
-        {
-            "from": "12", "to": "13"
-        }
+        {"from": "p1", "to": "x1"},
+        {"from": "x1", "to": "x3"},
+        {"from": "c1", "to": "x3"},
+        {"from": "p1", "to": "x2"},
+        {"from": "x2", "to": "x3"},
+        {"from": "x3", "to": "x4"},
+        {"from": "x4", "to": "x5"},
+        {"from": "x5", "to": "x6"},
+        {"from": "x7", "to": "x9"},
+        {"from": "x9", "to": "x10"},
+        {"from": "11", "to": "12"},
+        {"from": "12", "to": "13"}
     ],
     "ad_da": ["32bit"],
     "dimensions": {

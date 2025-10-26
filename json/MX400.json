@@ -1,0 +1,204 @@
+{
+    "id": "128bit unique id",
+    "name": "MX400",
+    "vendor": "Behringer",
+    "serial_id": "behringer's id",
+    "type": "Analog Mixer",
+    "ports": [
+                {
+            "id": "1",
+            "name": "Input 1",
+            "shape": "Phone_6.35mm",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "max_input_db": "+16dBu",
+                    "impedance" : "4.7kΩ"
+                }
+            }
+        },
+        {
+            "id": "2",
+            "name": "Input 2",
+            "shape": "Phone_6.35mm",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "max_input_db": "+16dBu",
+                    "impedance" : "4.7kΩ"
+                }
+            }
+        },
+        {
+            "id": "3",
+            "name": "Input 3",
+            "shape": "Phone_6.35mm",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "max_input_db": "+16dBu",
+                    "impedance" : "4.7kΩ"
+                }
+            }
+        },
+        {
+            "id": "4",
+            "name": "Input 4",
+            "shape": "Phone_6.35mm",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "max_input_db": "+16dBu",
+                    "impedance" : "4.7kΩ"
+                }
+            }
+        },
+        {
+            "id": "5",
+            "name": "Output",
+            "shape": "Phone_6.35mm",
+            "direction": "Output",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Audio",
+                "protocol": "Analog",
+                "channels": 1,
+                "attributes": {
+                    "max_output_db": "+16dBu",
+                    "impedance" : "80Ω"
+                }
+            }
+        },
+        {
+            "id": "6",
+            "name": "External Power",
+            "shape": "DC_Barrel",
+            "direction": "Input",
+            "balanced": "False",
+            "gender": "Female",
+            "signal": {
+                "type": "Power",
+                "protocol": "DC",
+                "channels": 0,
+                "attributes": {
+                    "voltage": "12V",
+                    "current": "150mA",
+                    "outer_diameter_mm": "",
+                    "inner_diameter_mm": "",
+                    "polarity": "center_positive"
+                }
+            }
+        }
+    ],
+    "process": [
+        {
+            "id": "1",
+            "name": "Level 1",
+            "type": "Buffer Amp",
+            "attributes": {
+                "model": "JRC4580",
+                "range": "0–ndB"
+            }
+        },
+        {
+            "id": "2",
+            "name": "Level 2",
+            "type": "Buffer Amp",
+            "attributes": {
+                "model": "JRC4580",
+                "range": "0–ndB"
+            }
+        },
+        {
+            "id": "3",
+            "name": "Level 3",
+            "type": "Buffer Amp",
+            "attributes": {
+                "model": "JRC4580",
+                "range": "0–ndB"
+            }
+        },
+        {
+            "id": "4",
+            "name": "Level 4",
+            "type": "Buffer Amp",
+            "attributes": {
+                "model": "JRC4580",
+                "range": "0–ndB"
+            }
+        },
+        {
+            "id": "5",
+            "name": "Mix",
+            "type": "Mix",
+            "attributes": {
+                "input": 4,
+                "output": 1
+            }
+        }
+    ],
+    "controls": [
+        {
+            "id": "1",
+            "name": "Level 1",
+            "type": "Continuous"
+        },
+        {
+            "id": "2",
+            "name": "Level 2",
+            "type": "Continuous"
+        },
+        {
+            "id": "3",
+            "name": "Level 3",
+            "type": "Continuous"
+        },
+        {
+            "id": "4",
+            "name": "Level 4",
+            "type": "Continuous"
+        }
+    ],
+    "routing": [
+        {"from": "p1", "to": "x1"},
+        {"from": "c1", "to": "x1"},
+        {"from": "p2", "to": "x2"},
+        {"from": "c2", "to": "x2"},
+        {"from": "p3", "to": "x3"},
+        {"from": "c3", "to": "x3"},
+        {"from": "p4", "to": "x4"},
+        {"from": "c4", "to": "x4"},
+        {"from": "x1", "to": "x5"},
+        {"from": "x2", "to": "x5"},
+        {"from": "x3", "to": "x5"},
+        {"from": "x4", "to": "x5"},
+        {"from": "x5", "to": "p5"}
+    ],
+    "dimensions": {
+        "weight": "370g",
+        "width": "103.6mm",
+        "height": "46.5mm",
+        "depth": "57.2mm"
+    }
+}
