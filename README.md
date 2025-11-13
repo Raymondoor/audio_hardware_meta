@@ -11,7 +11,7 @@ I wanted to create an easy way to organize audio equipment, such as Audio interf
 - Controls (c):
     - This is where all the user controlled components gets defined. Things like faders, knobs and buttons come here. This itself only should hold values of how the value will change, not the value itself. [Continuous, Discrete, Boolean]
 - Routing:
-    - This is for the internals that connect Ports/Process/Controls A to Ports/Process/Controls B. Should be just {"from": "xx", "to": "xx"}. A routing does not connect to another routing, must have any of the obove in between. Partially implemented.
+    - This is for the internals that connect Ports/Process/Controls A to Ports/Process/Controls B. Should be just {"from": "xn", "to": "xn"}. A routing does not connect to another routing, must have any of the obove in between. Partially implemented.
 - Meta:
     - Some general organizing of data that is useful to humans. Such as stereo. Modern software can do many things and it may not be able to cover the entire "settings" each equipment has. Perhaps this is for that. Partially implemented.
 
